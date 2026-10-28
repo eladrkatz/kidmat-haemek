@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>קדמת העמק – מפת הספר</title>
+<style>
+/* Theme variables the dashboard widget frame normally provides */
+:root{--bg:#ffffff;--bg-elevated:#f6f7f9;--text:#1f2328;--text-strong:#0d1117;--muted:#6e7781;--muted-strong:#4b535c;--card:#ffffff;--card-fg:#1f2328;--border:#d8dee4;--border-strong:#afb8c1}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--bg-elevated:#171a20;--text:#e6e8eb;--text-strong:#ffffff;--muted:#8b949e;--muted-strong:#b1bac4;--card:#161b22;--card-fg:#e6e8eb;--border:#30363d;--border-strong:#484f58}}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body>div{max-width:980px;margin:0 auto}
+@media (max-width:640px){.vs{grid-template-columns:1fr!important}.vs .mid{text-align:center}}
+</style>
+</head>
+<body>
+<div dir="rtl" style="font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);padding:18px;line-height:1.5;--b:#3a7bd5;--o:#e8642c;--t:#159a8c;--v:#8a5cc2">
+<style>
+.mix{background:color-mix(in srgb,var(--c) 11%,var(--card));color:var(--card-fg);border:1px solid color-mix(in srgb,var(--c) 45%,var(--border))}
+h1{font-size:24px;margin:0;color:var(--text-strong)}
+h2{font-size:19px;margin:26px 0 4px;color:var(--c)}
+.motto{font-size:13px;color:var(--muted-strong);margin-bottom:10px}
+.hero{--c:var(--o);padding:14px;margin:10px 0 6px;font-size:14.5px}
+.st{display:grid;grid-template-columns:54px 1fr;gap:10px;padding:12px;margin:8px 0;border-inline-start:5px solid var(--c)}
+.st svg.ic{width:46px;height:46px;stroke:var(--c);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.st .t{font-weight:700;font-size:15px}.st .r{font-size:11px;color:var(--muted);font-weight:400;margin-inline-start:6px}
+.q{font-size:13px;color:var(--muted-strong);margin-top:2px}.q b{color:var(--c)}
+.a{font-size:14px;margin-top:3px}
+.ex{font-size:12.5px;margin-top:5px;padding:5px 8px;background:color-mix(in srgb,var(--c) 7%,var(--bg));color:var(--text);border-inline-start:2px solid var(--c)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;margin:10px 0;align-items:stretch}
+.vs>div{padding:10px;font-size:13px}.vs h4{margin:0 0 4px;font-size:15px;color:var(--c)}
+.vs .mid{align-self:center;font-weight:700;color:var(--muted)}
+.vs ul{margin:0;padding-inline-start:16px}
+.grid2{display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:13px;margin:10px 0}
+.grid2>div{padding:8px}.grid2 .hd{font-weight:700;text-align:center;color:var(--muted-strong)}
+.cyc text{font-family:inherit;font-size:13px;fill:var(--text)}
+.tl text{fill:var(--text);font-size:11px;font-family:inherit}
+.leg{font-size:12px;display:flex;gap:16px;justify-content:center;color:var(--muted-strong)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-inline-end:4px;vertical-align:middle}
+</style>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="fl" viewBox="0 0 24 24"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-3-1-6 0-8z"/></symbol>
+<symbol id="ch" viewBox="0 0 24 24"><path d="M4 14c0-2 2-3 2-5 1 2 2 2 2 5a2 2 0 0 1-4 0zM10 14c0-2 2-3 2-5 1 2 2 2 2 5a2 2 0 0 1-4 0zM16 14c0-2 2-3 2-5 1 2 2 2 2 5a2 2 0 0 1-4 0zM6 16v5M12 16v5M18 16v5"/></symbol>
+<symbol id="lv" viewBox="0 0 24 24"><path d="M3 9h10v8H3zM2 9h12M3 13h10M16 4h5v17h-5zM16 8h5M16 12h5M16 16h5"/></symbol>
+<symbol id="pl" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12zM10 21v-6h4v6M2 21h20"/></symbol>
+<symbol id="wh" viewBox="0 0 24 24"><path d="M12 22V8M12 8c-2-1-3-3-3-5 2 0 3 2 3 5zM12 8c2-1 3-3 3-5-2 0-3 2-3 5zM12 13c-2-1-4-2-4-4 2 0 4 2 4 4zM12 13c2-1 4-2 4-4-2 0-4 2-4 4zM12 18c-2-1-4-2-4-4 2 0 4 2 4 4zM12 18c2-1 4-2 4-4-2 0-4 2-4 4z"/></symbol>
+<symbol id="bk" viewBox="0 0 24 24"><path d="M4 4h7v16H4zM13 4h7v16h-7zM6 8h3M6 11h3M15 8h3M15 11h3"/></symbol>
+<symbol id="sc" viewBox="0 0 24 24"><path d="M6 3h12v18H6zM9 7h6M9 10h6M9 13h4"/></symbol>
+<symbol id="ey" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="nm" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 8h2M12 8h4M8 12h4M14 12h2M8 16h6"/></symbol>
+<symbol id="gn" viewBox="0 0 24 24"><path d="M3 20L14 9M14 9l5-5 1 1-5 5zM9 4v6M13 18h8M17 14v8"/></symbol>
+<symbol id="hm" viewBox="0 0 24 24"><path d="M4 20l9-9M11 5l4-2 6 6-2 4zM15 15l2 1M18 12h2M14 18v2"/></symbol>
+<symbol id="ht" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 6-8 11-8 11z"/></symbol>
+<symbol id="bd" viewBox="0 0 24 24"><path d="M3 20h18M12 4v4M12 8c-3 0-6 3-6 6M12 8c3 0 6 3 6 6M6 14v6M18 14v6"/></symbol>
+<symbol id="fk" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L5 19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2l-5-10V3M8 15h8"/></symbol>
+<symbol id="pn" viewBox="0 0 24 24"><path d="M4 20l3-1 11-11-2-2L5 17zM14 6l2 2M4 20h16"/></symbol>
+<symbol id="cr" viewBox="0 0 24 24"><path d="M3 18h18M4 18l-1-10 5 4 4-7 4 7 5-4-1 10"/></symbol>
+</defs></svg>
+
+<h1>קדמת העמק: מה הנצי״ב אומר, צעד אחר צעד</h1>
+<div class="hero mix"><b>הספר בכמה שורות:</b> התורה ניתנה בשני חלקים. <b style="color:var(--b)">דת</b> היא הלכה ברורה ופסוקה. <b style="color:var(--o)">אש</b> היא החלק הפתוח, שמתגלה רק בעמל ובוויכוח. ההיסטוריה של התורה היא סיפור הפיכת האש לדת, דור אחר דור. לפעמים התורה מוארת בקלות, מזכות ומסורה, ולפעמים צריך לגשש בחושך בפלפול, והחושך דווקא מוליד אור גדול יותר. בימינו מסורת הגאונים כמעט נשכחה, ולכן הנצי״ב כותב את הספר: לחזור ללשון השאילתות ולעמול עליה. ובסוף הוא מזהיר: לחדש מותר וטוב, אבל רק לשם שמיים.</div>
+
+<svg class="cyc" viewBox="0 0 640 230" style="width:100%;max-width:640px;display:block;margin:6px auto">
+<defs><marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker></defs>
+<g stroke="var(--muted)" stroke-width="2" fill="none" marker-end="url(#m)">
+<path d="M500 70 Q560 115 500 160"/><path d="M430 185 L215 185"/><path d="M140 160 Q80 115 140 70"/><path d="M210 45 L425 45"/></g>
+<g><rect x="430" y="18" width="150" height="56" rx="10" fill="color-mix(in srgb,var(--o) 22%,var(--card))" stroke="var(--o)"/><text x="505" y="42" text-anchor="middle" font-weight="700">🔥 אש</text><text x="505" y="62" text-anchor="middle" font-size="11">שאלה פתוחה</text></g>
+<g><rect x="430" y="158" width="150" height="56" rx="10" fill="color-mix(in srgb,var(--o) 12%,var(--card))" stroke="var(--o)"/><text x="505" y="182" text-anchor="middle" font-weight="700">פלפול וחקירה</text><text x="505" y="202" text-anchor="middle" font-size="11">חכמים מתווכחים</text></g>
+<g><rect x="60" y="158" width="150" height="56" rx="10" fill="color-mix(in srgb,var(--b) 12%,var(--card))" stroke="var(--b)"/><text x="135" y="182" text-anchor="middle" font-weight="700">הכרעה ברוב</text><text x="135" y="202" text-anchor="middle" font-size="11">״נמנו וגמרו״</text></g>
+<g><rect x="60" y="18" width="150" height="56" rx="10" fill="color-mix(in srgb,var(--b) 22%,var(--card))" stroke="var(--b)"/><text x="135" y="42" text-anchor="middle" font-weight="700">📜 דת</text><text x="135" y="62" text-anchor="middle" font-size="11">הלכה פסוקה</text></g>
+<text x="320" y="36" text-anchor="middle" font-size="12" fill="var(--muted-strong)">ההלכה הופכת ללפיד: נקודת המוצא לשאלה הבאה</text>
+<text x="320" y="118" text-anchor="middle" font-size="14" font-weight="700">המעגל שכל הספר בנוי עליו</text>
+</svg>
+
+<div style="--c:var(--o)"><h2>חלק א: איך אש נעשית דת</h2><div class="motto">פסוק הפתיחה: ״ויתר שהיה קהלת חכם… ואזן וחקר תקן משלים הרבה״ (קהלת יב,ט)</div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#fl"/></svg><div><div class="t">אש דת<span class="r">1.1</span></div>
+<div class="q"><b>השאלה:</b> מה פירוש ״מימינו אש דת למו״?</div>
+<div class="a">יש בתורה חלק פסוק (דת) וחלק פתוח (אש). כמו אש, כל ניצוץ מדליק לפיד חדש. מיהושע והלאה הכריעו מחלוקות ברוב, וכך האש נעשתה דת.</div>
+<div class="ex">ארבע דרגות בתורה: גלוי לכל (פדגוג) · מכוסה, שמגיעים אליו בעיון · מוצנע, שצריך לו סייעתא דשמיא · ומה שאי אפשר להשיג כלל.</div></div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#ch"/></svg><div><div class="t">שלשלת ההכרעות<span class="r">1.2–1.3</span></div>
+<div class="q"><b>השאלה:</b> מהי ״הלכתא גמירי לה״ בתלמוד?</div>
+<div class="a">לפי הרמב״ם אין זו הלכה למשה מסיני, אלא הלכה שהוכרעה באיזה דור ונמסרה הלאה. ומה ״הראו למשה בסיני״? את ההכרעות העתידות, לא את הוויכוחים.</div>
+<div class="ex">למה הקב״ה לא כתב הכול בתורה? כי הוא לא כותב מחלוקות, וגם לא דינים שנועדו להישאר פתוחים.</div></div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#lv"/></svg><div><div class="t">מי מכריע? לוי מול יהודה<span class="r">1.4–1.8</span></div>
+<div class="a">יש שני כוחות פסיקה, והם מלווים את כל ההיסטוריה:</div>
+<div class="vs"><div class="mix" style="--c:var(--b)"><h4>לוי · הכהן</h4><ul><li>פוסק על המקרה שלפניו, ״לשעה״</li><li>נשען על סייעתא דשמיא: הארון, הכהן הגדול</li><li>לא מחייב לדורות</li></ul></div><div class="mid">מול</div><div class="mix" style="--c:var(--o)"><h4>יהודה · המחוקק</h4><ul><li>חלש בהחלטה מהירה</li><li>מגיע להלכה בפלפול עם חברים ותלמידים</li><li>יוצר הלכה קבועה לדורות</li></ul></div></div>
+<div class="ex">בצלאל (יהודה) עשה את הארון, והלוויים נשאו אותו. שאול פסק בביטחון ולא הראה את נימוקיו, ודוד עמל בפלפול. שלמה הוסיף חקירה של טעמי מה שכבר נפסק. <b>נקודת המפנה:</b> יאשיהו גונז את הארון ואומר ללוויים ״עתה עבדו״, ומאז כולם חייבים ללכת בדרך יהודה.</div></div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#pl"/></svg><div><div class="t">אור מזכות מול אור מעמל<span class="r">1.9–1.12</span></div>
+<div class="vs"><div class="mix" style="--c:var(--b)"><h4>ארץ ישראל</h4>זכות המקום מאירה; מגיעים להלכה ״במעט עיון״. לומדים ביחידות ומחברים מקרה חדש לדין ידוע.</div><div class="mid">מול</div><div class="mix" style="--c:var(--o)"><h4>בבל</h4>״במחשכים הושיבני״, וזה שבח! בחושך מאיר רק לפיד גדול של פלפול, מתוך חידוד הדדי.</div></div>
+<div class="ex"><b>משל הפלטרין:</b> מי שיש לו נר יוצא מהארמון מהר ולא לומד את מבנהו. מי שמגשש בחושך נתקל וטועה, אבל כשהוא מגיע לפתח רואה ״אור גדול של חכמת הבניין״. התלמוד הבבלי הוא הארמון הבנוי.</div></div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#wh"/></svg><div><div class="t">רעב המסורה<span class="r">1.13–1.14</span></div>
+<div class="q"><b>השאלה:</b> למה בעלי התוספות בצרפת פלפלו כל כך? הרי הראשונים הסתדרו בלי זה!</div>
+<div class="a">כי לא הייתה בידם מסורה סדורה, ומי שחסרה לו מסורה חייב לעמול. ״רעב״ בא רק לדור שיש בו כוח לעמוד בו. מי שלועג לפלפול דומה לעשיר שירש את הונו ושואל למה העני עובד.</div>
+<div class="ex">המחזור חוזר: שובע (ארון, כהן גדול) ← רעב (יאשיהו) · שובע (מידות הלל) ← אמוראים · שובע (מסורת הגאונים) ← בעלי התוספות.</div></div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#cr"/></svg><div><div class="t">הראשונים והגאונים<span class="r">1.15–1.16</span></div>
+<div class="a">בעלי התוספות כיבדו את הגאונים אבל סמכו רק על מה שמצאו בעצמם. לרמב״ם הייתה מסורת הגאונים מילה במילה, דרך אביו ותלמידי הרי״ף. האחרונים טעו: הם ניסו להכניס את הרמב״ם בכוח לסוגיה כפי שרש״י ותוספות קראו אותה.</div>
+<div class="ex">האמת: לרמב״ם הייתה קריאה אחרת של הסוגיה, ממסורת רבותיו וגרסתו. מי שלא מכיר את בה״ג ואת השאילתות מחמיץ את שורשי ההלכות.</div></div></div>
+
+<div class="st mix" style="--c:var(--o)"><svg class="ic"><use href="#bk"/></svg><div><div class="t">ולכן הספר הזה<span class="r">1.17–1.18</span></div>
+<div class="a">הנצי״ב מראה את שיטות הגאונים מתוך מקורותיהם, ובודק אותן בפלפול בנוסח התוספות והרמב״ן. בענווה: מי שיפרש אחרת, יבוא ויפרש. בסוף החלק הוא מודה לאבותיו, לישיבת וולוז׳ין ולבני משפחתו.</div></div></div>
+
+<div style="--c:var(--t)"><h2>חלק ב: השכבה הנסתרת בתורה שבכתב</h2><div class="motto">פסוק הפתיחה: ״דברי חכמים כדרבנות וכמשמרות נטועים בעלי אספות״ (קהלת יב,י–יא)</div></div>
+
+<div class="st mix" style="--c:var(--t)"><svg class="ic"><use href="#ey"/></svg><div><div class="t">למה ניתנו נביאים וכתובים?<span class="r">2.1–2.5</span></div>
+<div class="a">לא בשביל התוכחה לשעה; רוב הנבואות בכלל לא נכתבו. הכ״ד ספרים נבחרו כדי ללמד את מה שרמוז מעבר לפשט. הכול רמוז כבר בחומש, אבל אחרי החטא כהו העיניים ונדרשו ספרים נוספים.</div>
+<div class="ex">תלמיד חכם צריך לבקיא בכ״ד ספרים כמו כלה בכ״ד קישוטים. לשון לא מלוטשת במקרא היא סימן לתוכן נסתר, כמו בציור: ציור דומם יכול להיות מושלם, ויצור חי תמיד יש בו פגמים.</div></div></div>
+
+<div class="st mix" style="--c:var(--t)"><svg class="ic"><use href="#gn"/></svg><div><div class="t">מענין ושלא מענין<span class="r">2.3, 2.6</span></div>
+<div class="a">יש שתי דרכי דרשה: <b>מענין</b> מעשירה את נושא הפרשה עצמה (״ככסף״), ו<b>שלא מענין</b> מוציאה מלשון לא מדויקת הלכה ממקום אחר (״כמטמונים״). אחר כך צריך לסדר את הכול ״כשלחן ערוך״.</div>
+<div class="ex">ישעיהו כח ״צו לצו קו לקו… זעיר שם״: התורה מפוזרת, ומי שלא לומד בסדר ״ילכו וכשלו אחור״, כלומר שוכח וטועה בהוראה.</div></div></div>
+
+<div class="st mix" style="--c:var(--t)"><svg class="ic"><use href="#nm"/></svg><div><div class="t">״דברי אמת״: כל התורה שמותיו<span class="r">2.7</span></div>
+<div class="a">למה המקרא כתוב ברמזים? כי כל התורה היא צירופי שמותיו של הקב״ה, והעולם נברא בהם. לכן אי אפשר לשנות אות אחת, והתוכן הנוסף חייב לבוא ברמז. מכאן שאנחנו צריכים תורה שבעל פה.</div>
+<div class="ex">״ותמנע היתה פילגש״ שווה ל״שמע ישראל״ בצירופי השמות, וזהו חותמו של הקב״ה: אמת.</div></div></div>
+
+<div class="st mix" style="--c:var(--t)"><svg class="ic"><use href="#hm"/></svg><div><div class="t">שני סוגי גדולים, ושני דימויים<span class="r">2.8–2.12</span></div>
+<div class="a">בכל דור יש <b>חכמים</b>, שדורשים מהמקרא ומעמיקים, ו<b>בעלי אסופות</b>, שמלקטים דינים מפוזרים ומסדרים אותם. הנצי״ב קורא את שני הדימויים על שני הסוגים:</div>
+<div class="grid2"><div></div><div class="hd">דרבנות (מרדעים)</div><div class="hd">מסמרות נטועים</div>
+<div class="hd" style="align-self:center">חכמים</div><div class="mix" style="--c:var(--t)">כמה טעמים מוסכמים בפסוק אחד; כל טעם הוא דרבן</div><div class="mix" style="--c:var(--t)">דעה שנדחתה ״נטועה״ ומאירה עניין אחר, כניצוץ מפטיש</div>
+<div class="hd" style="align-self:center">בעלי אסופות</div><div class="mix" style="--c:var(--t)">המניין מלמד, למשל ״15 נשים״ מוציא מקרה מסוים</div><div class="mix" style="--c:var(--t)">רמזים בלשונם הקצרה; צריך לקרוא מילה במילה</div></div>
+<div class="ex">רבי עקיבא היה שניהם. אחריו: השאילתות, בה״ג, הרי״ף והרמב״ם הם בעלי אסופות, ובעלי התוספות הם חכמים.</div></div></div>
+
+<div class="st mix" style="--c:var(--t)"><svg class="ic"><use href="#bk"/></svg><div><div class="t">השאילתות: איך לקרוא אותן<span class="r">2.13</span></div>
+<div class="a">השאילתות הן ספר של בעל אסופות, ולכן צריך לדקדק בכל מילה ולהשוות לבה״ג ולרי״ף. ״השומע מן הקטן כשומע מן הגדול״: אם עומלים, הלימוד ממקור פחות שווה ללימוד מהגדול. הספר הוא מסורת של רב אחאי, לא חידוש של הנצי״ב.</div></div></div>
+
+<div style="--c:var(--v)"><h2>חלק ג: גבולות ההשתדלות וסכנת החידוש</h2><div class="motto">פסוק הפתיחה: ״ויתר מהמה בני הזהר, עשות ספרים הרבה אין קץ״ (קהלת יב,יב)</div></div>
+
+<div class="st mix" style="--c:var(--v)"><svg class="ic"><use href="#bd"/></svg><div><div class="t">״אל תהי צדיק הרבה״<span class="r">3.1–3.2</span></div>
+<div class="q"><b>השאלה:</b> כל אחד קיבל בסיני את חלקו. מותר לנסות להשיג יותר, או להסתכן בשביל מצווה?</div>
+<div class="a">לפי הטבע, לא: מי שמסתכן במקום סכנה, או מתחכם מעבר לחלקו, ״ישתומם״. אבל חז״ל משבחים את מי שממית עצמו על התורה, כמו הלל על הגג. איך זה מתיישב?</div></div></div>
+
+<div class="st mix" style="--c:var(--v)"><svg class="ic"><use href="#ht"/></svg><div><div class="t">אהבת תורה: מעל הטבע<span class="r">3.3–3.5</span></div>
+<div class="a">ההשגחה הולכת לפי דרך העבודה. מי ששוכח את עצמו מאהבה מקבל השגחה שמעל הטבע. רוב המצוות כמעט אינן מביאות לכך, אבל עומק התורה עושה זאת מטבעו: ״באהבתה תשגה תמיד״.</div>
+<div class="ex">רבא לא הרגיש שאצבעותיו מדממות. אהבת תורה גדולה היום מאהבת ה׳, כי התורה ״עונה״ לאוהביה תמיד, ״עמלה לו״.</div></div></div>
+
+<div class="st mix" style="--c:var(--v)"><svg class="ic"><use href="#fk"/></svg><div><div class="t">סם חיים או סם מוות<span class="r">3.6–3.8</span></div>
+<div class="a">לתורה שבעל פה שני חלקים: מסורה והיקש (של אהרן והארון), ופלפול וחידוש (חלקו של משה, ״אשר שם משה״).</div>
+<div class="grid2"><div></div><div class="hd">לשמה</div><div class="hd">שלא לשמה</div>
+<div class="hd" style="align-self:center">מסורה</div><div class="mix" style="--c:var(--b)">סם חיים</div><div class="mix" style="--c:var(--b)">רק נשכחת (״זר״)</div>
+<div class="hd" style="align-self:center">חידוש</div><div class="mix" style="--c:var(--o)">סם חיים</div><div class="mix" style="--c:#c0392b"><b>סם המוות</b>: פוסק לפי רצונו</div></div>
+<div class="ex">משה לימד את כולם פלפול רק בערבות מואב, כשכבר ידע שתבוא גלות והמסורה לא תספיק.</div></div></div>
+
+<div class="st mix" style="--c:var(--v)"><svg class="ic"><use href="#pn"/></svg><div><div class="t">״עשות ספרים״: עצה למחדש<span class="r">3.9–3.11 · קריאה ראשונה</span></div>
+<div class="a">״בני״ הוא מי שבונה בתורה. כתוב את חידושיך לעצמך, כדי שלא תהיה משוחד בשעת הוראה ולא תמהר. ״להג הרבה״: אמור אותם לפני חברים ותלמידים, שיבחנו אותם.</div></div></div>
+
+<div style="--c:var(--b)"><h2>המטוטלת בהיסטוריה</h2><div class="motto">מתי התורה הוארה מזכות ומסורה, ומתי מעמל ופלפול</div></div>
+<svg class="tl" id="tl" viewBox="0 0 1000 130" style="width:100%;height:auto"></svg>
+<div class="leg"><span><i class="dot" style="background:var(--b)"></i>אור מזכות / מסורה</span><span><i class="dot" style="background:var(--o)"></i>אור מעמל / פלפול</span><span><i class="dot" style="background:linear-gradient(90deg,var(--b) 50%,var(--o) 50%)"></i>שניהם</span></div>
+<script>
+const P=[["סיני","x"],["יהושע: הכרעה ברוב","o"],["שלמה: טעמים","o"],["יאשיהו גונז","o"],["בבל","o"],["בית שני","b"],["הלל","o"],["הגאונים","b"],["בעלי התוספות","o"],["הרמב״ם","x"],["האחרונים","o"],["הנצי״ב","x"]];
+const s=document.getElementById('tl');let h='<defs><linearGradient id="hf"><stop offset="50%" stop-color="#3a7bd5"/><stop offset="50%" stop-color="#e8642c"/></linearGradient></defs><line x1="40" y1="60" x2="960" y2="60" stroke="var(--border-strong)" stroke-width="3"/>';
+P.forEach((p,i)=>{const x=960-i*83.6,up=i%2==0,y=up?24:112;
+const f=p[1]=='b'?'#3a7bd5':p[1]=='o'?'#e8642c':'url(#hf)';
+h+=`<line x1="${x}" y1="60" x2="${x}" y2="${up?34:96}" stroke="var(--border)"/><circle cx="${x}" cy="60" r="11" fill="${f}" stroke="var(--bg)" stroke-width="2"/><text x="${x}" y="${y}" text-anchor="middle">${p[0]}</text>`;});
+s.innerHTML=h;
+</script>
+</div>
+</body>
+</html>
